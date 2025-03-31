@@ -1,0 +1,55 @@
+.header {
+    background-color: #8c7000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.headerSize {
+    font-size: 15em;
+}
+
+/*FUENTES ESPECIALES:*/
+
+.fontRomanNormal {
+    font-family: romanAntique, serif;
+}
+
+.fontRomanItalic {
+    font-family: romanAntiqueItalic, serif;
+}
+
+.fontWarisOver {
+    font-family: WarisOver, serif; /*Esta fuente requiere que el texto en MAYUS*/
+}
+
+.fontPressStyleLarge {
+    font-family: PressStyleLarge, serif;
+}
+
+@font-face {
+    font-family: romanAntique;
+    src: url('fonts/RomanAntique.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: WarisOver;
+    src: url('fonts/WarisOver.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: romanAntiqueItalic;
+    src: url('fonts/RomanAntique-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: PressStyleLarge;
+    src: url('fonts/PressStyleLarge.ttf') format('truetype');
+}
