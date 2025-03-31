@@ -1,13 +1,40 @@
-html {
+html, body {
     background-color: #783a04;
     margin: 0;
     padding: 0;
 }
 
+/*Content*/
+.contentColorBackground {
+    background-color: #783a04;
+}
+
+.fontContentColor {
+    color: #F5E1C8;
+}
+
+.fontContentSize {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.fontContentSubtitleSize {
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+}
+
+.fontContentTitleSize {
+    font-size: clamp(2.5rem, 3vw, 3rem);
+}
+
+.contentWrapper { /*Util para reajustar tamaño pero quitando la clase container de Bootstrap*/
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 /*Footers y Headers*/
 
 .header {
-    background-color: #765f02;
+    background-color: #947807;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -21,11 +48,15 @@ html {
 }
 
 .headerSize {
-    font-size: 15em;
+    font-size: clamp(2.5rem, 3vw, 3rem);
 }
 
-.footerSize {
-    font-size: 10em;
+.footerSizeMain {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.footerSizeInfo {
+    font-size: clamp(1rem, 1.5vw, 1rem);
 }
 
 /*FUENTES ESPECIALES:*/
@@ -39,7 +70,8 @@ html {
 }
 
 .fontWarisOver {
-    font-family: WarisOver, serif; /*Esta fuente requiere que el texto en MAYUS*/
+    font-family: WarisOver, serif; /* Esta fuente requiere que el texto esté en mayúsculas */
+    text-transform: uppercase;
 }
 
 .fontPressStyleLarge {
